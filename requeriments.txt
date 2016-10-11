@@ -1,0 +1,11 @@
+Django==1.10.2
+django-crispy-forms==1.6.0
+django-filter==0.15.2
+django-push-notifications==1.4.1
+djangorestframework==3.4.7
+gunicorn==19.6.0
+Pillow==3.4.1
+psycopg2==2.6.2
+python-dateutil==2.5.3
+pytz==2016.7
+six==1.10.0
