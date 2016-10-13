@@ -13,9 +13,22 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url
+from django.conf.urls import url, include
 from django.contrib import admin
+from django.contrib.auth.views import logout
+from django.urls import reverse_lazy
+
+from dashjango import settings
+from core import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^core/', include("core.urls")),
+    url(r'^login/$', views.login_view, name="login"),
+    url(r'^logout/$', views.logout_view, name="logout"),
+    url(r'^$', views.index, name="index"),
 ]
+
+if settings.DEBUG:
+    from django.conf.urls.static import static
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,0 +1,19 @@
+{% load custom_tags %}
+
+
+<ul class="sidebar-menu">
+    <li class="header">MENÚ PRINCIPAL</li>
+    <li class="{% add_active request "index" %}">
+        <a href="{% url "index" %}">
+            <i class="fa fa-home"></i> <span>Inicio</span>
+        </a>
+    </li>
+{# --------------- DJANGO ADMIN --------------- #}
+    {% if user.is_staff %}
+        <li class="{% add_active request "/admin/" 1 %}">
+            <a href="/admin/" target="_blank">
+                <i class="fa fa-gears"></i> <span>Django ADMIN</span>
+            </a>
+        </li>
+    {% endif %}
+</ul>

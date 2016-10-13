@@ -1,0 +1,24 @@
+{
+  "name": "dashjago",
+  "version": "1.0.0",
+  "description": "Un dashboard base construído con Django. Basado en el tema https://github.com/almasaeed2010/AdminLTE",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true,
+  "author": "mrcaste",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrcaste/dashjango.git"
+  },
+  "keywords": [
+    "django",
+    "dashboard"
+  ],
+  "homepage": "https://github.com/mrcaste/dashjango",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "dashjango",
+  "description": "Un dashboard base construído con Django. Basado en el tema https://github.com/almasaeed2010/AdminLTE",
+  "authors": [
+    "mrcaste"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "static/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.6.3",
+    "Ionicons": "ionicons#^2.0.1",
+    "moment": "^2.15.1",
+    "moment-timezone": "^0.5.6",
+    "AdminLTE": "adminlte#^2.3.6"
+  }
+}
